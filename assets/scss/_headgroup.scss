@@ -1,0 +1,27 @@
+@import "./root";
+
+.headgroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md);
+
+    &__label {
+        font-size: var(--size-xs);
+
+        &::before {
+            content: "[ ";
+        }
+
+        &::after {
+            content: " ]";
+        }
+    }
+
+    &__headline {
+        font-size: var(--size-md);
+
+        @media (min-width: $sm) {
+            font-size: var(--size-md);
+        }
+    }
+}

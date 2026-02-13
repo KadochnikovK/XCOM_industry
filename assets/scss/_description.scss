@@ -1,0 +1,16 @@
+.description {
+    &__content {
+        padding-top: var(--size-sm);
+        padding-bottom: var(--size-sm);
+    }
+
+    &__text {
+        font-size: var(--size-md);
+
+        @media(min-width: $sm) {
+            font-size: var(--size-md);
+        }
+    }
+
+
+}

@@ -1,0 +1,22 @@
+.offer {
+    height: 100vh;
+    background: var(--gradient-main);
+
+    &__content {
+        color: var(--color-white);
+        gap: var(--size-md);
+        justify-content: center;
+        height: 100%;
+        position: absolute;
+
+        &.active {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__text {
+        font-size: var(--size-sm);
+    }
+
+}
