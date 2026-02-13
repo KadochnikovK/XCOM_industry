@@ -31,7 +31,7 @@
 
     &__header {
 
-        padding: var(--size-sm) var(--size-sm) var(--size-sm);
+        padding: var(--size-sm) 0;
     }
 
     &--mobile {
@@ -61,6 +61,14 @@
             }
 
         }
+
+        &--background {
+            background: var(--gradient-main);
+
+            * {
+                color: var(--color-white);
+            }
+        }
     }
 
     &--mobile {
@@ -86,7 +94,7 @@
         position: relative;
         min-height: 74px;
         font-size: var(--size-xs);
-        padding: var(--size-sm);
+        padding: var(--size-sm) 0;
         gap: clamp(var(--size-sm), 3vw, var(--size-xs));
 
         &--column {
@@ -99,6 +107,8 @@
         &--start {
             align-items: start;
         }
+
+
 
 
 
@@ -116,6 +126,16 @@
 
         @media(min-width: $sm) {
             min-height: 135px;
+        }
+
+        &--small {
+            font-size: var(--size-xs) !important;
+            font-weight: 600;
+
+            * {
+                font-size: var(--size-xs) !important;
+                font-weight: 600;
+            }
         }
 
     }

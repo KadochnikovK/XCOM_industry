@@ -2,10 +2,10 @@
 
 .date {
     display: flex;
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
 
     &__item {
-        padding: var(--size-sm);
+        padding:  0 var(--size-xs);
 
         &:nth-child(1) {
             padding-left: 0;

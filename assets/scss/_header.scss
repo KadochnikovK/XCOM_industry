@@ -7,6 +7,14 @@
     transition: all 0.3s ease;
     color: var(--color-white);
 
+
+
+    * {
+        font-weight: 600;
+    }
+
+
+
     &__content {
         display: flex;
         justify-content: space-between;
@@ -23,7 +31,7 @@
 
     &__menu {
         position: absolute;
-
+        margin-left: auto;
         left: 0;
         width: 100%;
         display: none;
@@ -75,6 +83,7 @@
     }
 
     &__logo {
+
         &:hover {
             svg {
                 filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
@@ -183,7 +192,7 @@
             box-shadow: none;
             border-bottom: none;
             gap: var(--size-md);
-            opacity: 1 !important; 
+            opacity: 1 !important;
             visibility: visible !important;
 
         }
@@ -193,7 +202,7 @@
             padding: 0;
             border-bottom: none;
             text-align: center;
-            
+
 
 
             &:hover {

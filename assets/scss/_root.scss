@@ -8,18 +8,18 @@ $xs: 320px;
 :root {
   
     --color-blue-main: #5784e6;
-    --color-blue-second: #0b1957;
+    --color-blue-second: #06182E;
     --color-orange: #f27028;
     --color-orange-second: #f59324;
     --color-regular: #343434;
-    --color-grey: #7d7d7d;
+    --color-grey: #9D9D9D;
     --color-grey-light: #efefef;
     --color-white: #fff;
 
     --gradient-main: linear-gradient(103.4deg, #000000 0.33%, #103F77 100%);
 
 
-    --size-base: calc(min(100vh, 100vw) * 0.02 + max(100vh, 100vw) * 0.008);
+    --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.008);
 
     --size-xxxxs: calc(var(--size-base) * 0.2);
     --size-xxxs: calc(var(--size-base) * 0.4);
@@ -27,10 +27,10 @@ $xs: 320px;
     --size-xs: calc(var(--size-base) * 0.8);
     --size-sm: calc(var(--size-base) * 1);
     --size-md: calc(var(--size-base) * 1.2);
-    --size-lg: calc(var(--size-base) * 2);
-    --size-xl: calc(var(--size-base) * 2.5);
-    --size-xxl: calc(var(--size-base) * 5);
-    --size-xxxl: calc(var(--size-base) * 10);
+    --size-lg: calc(var(--size-base) * 1.5);
+    --size-xl: calc(var(--size-base) * 2);
+    --size-xxl: calc(var(--size-base) * 2.5);
+    --size-xxxl: calc(var(--size-base) * 5);
 
     --radius-lg: 24px;
     --radius-sm: 8px;
@@ -40,7 +40,7 @@ $xs: 320px;
     --lh-md: 1.2;
 
 
-    --max-size: 1140px;
+    --max-size: 1300px;
 
  
     --border-h-lg: 4px;

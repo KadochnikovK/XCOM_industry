@@ -1,18 +1,18 @@
 .line {
     &-top {
-        border-top: 1px solid var(--color-grey-light);
+        border-top: 1px solid var(--color-grey);
     }
 
     &-bottom {
-        border-bottom: 1px solid var(--color-grey-light);
+        border-bottom: 1px solid var(--color-grey);
     }
 
     &-left {
-        border-left: 1px solid var(--color-grey-light);
+        border-left: 1px solid var(--color-grey);
     }
 
     &-right {
-        border-right: 1px solid var(--color-grey-light);
+        border-right: 1px solid var(--color-grey);
     }
 
     &-center {
@@ -25,7 +25,7 @@
             height: 100%;
             position: absolute;
             width: 1px;
-            background-color: var(--color-grey-light);
+            background-color: var(--color-grey);
         }
     }
 }

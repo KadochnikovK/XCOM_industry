@@ -23,15 +23,28 @@
 .container {
     display: flex;
     justify-content: center;
+    padding-top: var(--size-xxxl);
+    padding-bottom: var(--size-xxxl);
+
+    &--background {
+        background: var(--gradient-main);
+        color: var(--color-white);
+
+
+        * {
+            color: var(--color-white);
+        }
+    }
 }
 
 .content {
     max-width: var(--max-size) !important;
-    color: var(--color-regular);
+    color: var(--color-blue-second);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
+    font-weight: 400;
     padding-right: var(--size-xs);
     padding-left: var(--size-xs);
 }
@@ -67,4 +80,14 @@
 
 .bg-light {
     background: var(--color-white);
+}
+
+.big-text {
+    font-weight: 700;
+}
+
+.logo {
+    &__img {
+        display: block;
+    }
 }

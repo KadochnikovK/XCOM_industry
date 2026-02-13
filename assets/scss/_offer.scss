@@ -2,6 +2,13 @@
     height: 100vh;
     background: var(--gradient-main);
 
+    font-weight: 800;
+
+    * {
+        font-weight: 600;
+    }
+
+
     &__content {
         color: var(--color-white);
         gap: var(--size-md);
@@ -16,7 +23,7 @@
     }
 
     &__text {
-        font-size: var(--size-sm);
+        font-size: var(--size-xs);
     }
 
 }
