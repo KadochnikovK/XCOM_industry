@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const partners = new Swiper(".partners-swiper", {
     breakpoints: {
 
         320: {
@@ -30,10 +30,10 @@ const swiper = new Swiper(".swiper", {
 
         },
     },
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-    },
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     hide: true,
+    // },
     freeMode: {
         enabled: true,
         sticky: false,
@@ -43,13 +43,105 @@ const swiper = new Swiper(".swiper", {
         delay: 10000,
         disableOnInteraction: false,
     },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
     navigation: {
-        nextEl: '.button--next',
-        prevEl: '.button--prev',
+        nextEl: '.partners-swiper .button--next',
+        prevEl: '.partners-swiper .button--prev',
+    },
+});
+
+const infopartners = new Swiper(".infopartners-swiper", {
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+
+        },
+
+        640: {
+            slidesPerView: 2,
+
+        },
+        920: {
+            slidesPerView: 3,
+
+        },
+
+        1300: {
+            slidesPerView: 4,
+
+        },
+
+        1600: {
+            slidesPerView: 5,
+
+        },
+
+        1800: {
+            slidesPerView: 6,
+
+        },
+    },
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     hide: true,
+    // },
+    freeMode: {
+        enabled: true,
+        sticky: false,
+    },
+    loop: true,
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: '.infopartners-swiper .button--next',
+        prevEl: '.infopartners-swiper .button--prev',
+    },
+});
+
+const speakers = new Swiper(".speakers-swiper", {
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+
+        },
+
+        
+        920: {
+            slidesPerView: 2,
+
+        },
+    },
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     hide: true,
+    // },
+    freeMode: {
+        enabled: true,
+        sticky: false,
+    },
+    loop: true,
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: '.speakers-swiper .button--next',
+        prevEl: '.speakers-swiper .button--prev',
     },
 });
 
