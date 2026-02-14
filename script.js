@@ -1,4 +1,5 @@
 const partners = new Swiper(".partners-swiper", {
+    spaceBetween: 20,
     breakpoints: {
 
         320: {
@@ -54,6 +55,7 @@ const partners = new Swiper(".partners-swiper", {
 });
 
 const infopartners = new Swiper(".infopartners-swiper", {
+    spaceBetween: 20,
     breakpoints: {
 
         320: {
@@ -109,6 +111,7 @@ const infopartners = new Swiper(".infopartners-swiper", {
 });
 
 const speakers = new Swiper(".speakers-swiper", {
+    spaceBetween: 20,
     breakpoints: {
 
         320: {
@@ -116,7 +119,7 @@ const speakers = new Swiper(".speakers-swiper", {
 
         },
 
-        
+
         920: {
             slidesPerView: 2,
 
@@ -144,6 +147,81 @@ const speakers = new Swiper(".speakers-swiper", {
         prevEl: '.speakers-swiper .button--prev',
     },
 });
+
+
+const moreSwiper2 = new Swiper(".more__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    speed: 600,
+
+    effect: 'slide',
+
+    simulateTouch: true,
+    grabCursor: true,
+    touchRatio: 1,
+    touchAngle: 45,
+    allowTouchMove: true,
+
+
+    resistance: true,
+    resistanceRatio: 0.6,
+
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+    },
+    navigation: {
+        nextEl: '.more__swiper .button--next',
+        prevEl: '.more__swiper .button--prev',
+    },
+
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+
+        },
+        1024: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+
+        }
+    },
+
+
+    on: {
+        init: function () {
+            console.log("Schedule slider initialized");
+        },
+        slideChange: function () {
+            console.log("Schedule slider changed to slide:", this.realIndex);
+        }
+    }
+});
+
+const moreSlider2Element = document.querySelector('.more__swiper');
+if (moreSlider2Element) {
+    moreSlider2Element.addEventListener('mouseenter', function () {
+        if (moreSwiper2.autoplay && moreSwiper2.autoplay.running) {
+            moreSwiper2.autoplay.stop();
+            console.log("Schedule slider autoplay stopped");
+        }
+    });
+
+    moreSlider2Element.addEventListener('mouseleave', function () {
+        if (moreSwiper2.autoplay && !moreSwiper2.autoplay.running) {
+            moreSwiper2.autoplay.start();
+            console.log("Schedule slider autoplay started");
+        }
+    });
+}
 
 // const canvas = document.getElementById('backgroundCanvas');
 // const ctx = canvas.getContext('2d');
@@ -178,7 +256,7 @@ const speakers = new Swiper(".speakers-swiper", {
 
 //     glowStrength = lerp(glowStrength, 0, 0.02);
 
- 
+
 //     ctx.strokeStyle = 'rgba(200, 200, 200, 0.1)';
 //     ctx.shadowBlur = 0;
 //     for (let x = 0; x <= canvas.width; x += gridSize) {
@@ -194,7 +272,7 @@ const speakers = new Swiper(".speakers-swiper", {
 //         ctx.stroke();
 //     }
 
-   
+
 //     for (let x = 0; x <= canvas.width; x += gridSize) {
 //         for (let y = 0; y <= canvas.height; y += gridSize) {
 //             const dx = x - mouseX;
@@ -348,29 +426,29 @@ offerContent.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
 
 hamburger.addEventListener("click", function () {
     this.classList.toggle("active");
-    
+
     if (menu.classList.contains("active")) {
-        
+
         menu.style.opacity = '0';
         menu.style.visibility = 'hidden';
-        
+
         offerContent.style.opacity = '1';
         offerContent.style.visibility = 'visible';
-        
-        
+
+
         setTimeout(() => {
             menu.classList.remove("active");
             offerContent.classList.remove("active");
         }, 300);
     } else {
-       
+
         offerContent.style.opacity = '0';
         offerContent.style.visibility = 'hidden';
-        
+
         menu.style.opacity = '1';
         menu.style.visibility = 'visible';
-        
-       
+
+
         menu.classList.add("active");
         offerContent.classList.add("active");
     }
@@ -381,20 +459,20 @@ const menuLinks = document.querySelectorAll(".header__link");
 menuLinks.forEach((link) => {
     link.addEventListener("click", function () {
         hamburger.classList.remove("active");
-        
-        
+
+
         menu.style.opacity = '0';
         menu.style.visibility = 'hidden';
-        
+
         offerContent.style.opacity = '1';
         offerContent.style.visibility = 'visible';
-        
+
 
         setTimeout(() => {
             menu.classList.remove("active");
             offerContent.classList.remove("active");
         }, 300);
-        
-        
+
+
     });
 });
