@@ -13,11 +13,8 @@
 }
 
 .gradient-text {
-    background: linear-gradient(to right top, #0B1957, #5784E6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline;
+    color: var(--color-blue-main);
+    
 }
 
 .container {

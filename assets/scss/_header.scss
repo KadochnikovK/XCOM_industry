@@ -7,13 +7,16 @@
     transition: all 0.3s ease;
     color: var(--color-white);
 
+    padding-top: var(--size-sm);
+    padding-bottom: var(--size-sm);
 
-
+    @include md {
+        padding-top: initial;
+        padding-bottom: initial;
+    }
     * {
         font-weight: 600;
     }
-
-
 
     &__content {
         display: flex;
@@ -72,9 +75,9 @@
         &:hover {
             color: #7fa7ff;
             // color: var(--color-blue-main);
-            text-shadow: 0 0 30px rgba(87, 132, 230, 0.5),
+            text-shadow:
+                0 0 30px rgba(87, 132, 230, 0.5),
                 0 0 50px rgba(87, 132, 230, 0.7);
-
         }
 
         &:last-child {
@@ -83,13 +86,11 @@
     }
 
     &__logo {
-
         &:hover {
             svg {
                 filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
             }
         }
-
     }
 
     &__link--main {
@@ -110,7 +111,6 @@
         }
     }
 
-
     &__hamburger {
         display: flex;
         justify-content: center;
@@ -125,7 +125,7 @@
 
         &::before,
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             width: 40px;
             height: 2px;
@@ -142,7 +142,6 @@
         }
 
         &.active {
-
             &::before,
             &::after {
                 width: 50px;
@@ -156,22 +155,15 @@
                 transform: rotate(135deg);
             }
         }
-
-
-
     }
 
     @media (min-width: 767px) {
         &__button {
             font-size: var(--size-xs) !important;
         }
-
-
-
     }
 
     @media (min-width: 1024px) {
-
         &__content {
             flex-direction: row;
         }
@@ -194,7 +186,6 @@
             gap: var(--size-md);
             opacity: 1 !important;
             visibility: visible !important;
-
         }
 
         &__link {
@@ -202,8 +193,6 @@
             padding: 0;
             border-bottom: none;
             text-align: center;
-
-
 
             &:hover {
                 background-color: transparent;
@@ -214,6 +203,4 @@
             display: none;
         }
     }
-
-
 }

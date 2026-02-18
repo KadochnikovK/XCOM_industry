@@ -6,31 +6,29 @@ $sm: 640px;
 $xs: 320px;
 
 :root {
-  
     --color-blue-main: #5784e6;
-    --color-blue-second: #06182E;
+    --color-blue-second: #06182e;
     --color-orange: #f27028;
     --color-orange-second: #f59324;
     --color-regular: #343434;
-    --color-grey: #9D9D9D;
+    --color-grey: #9d9d9d;
     --color-grey-light: #efefef;
     --color-white: #fff;
 
-    --gradient-main: linear-gradient(103.4deg, #000000 0.33%, #103F77 100%);
-
+    --gradient-main: linear-gradient(103.4deg, #000000 0.33%, #103f77 100%);
 
     --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.008);
 
-    --size-xxxxs: calc(var(--size-base) * 0.2);
-    --size-xxxs: calc(var(--size-base) * 0.4);
-    --size-xxs: calc(var(--size-base) * 0.6);
-    --size-xs: calc(var(--size-base) * 0.8);
-    --size-sm: calc(var(--size-base) * 1);
-    --size-md: calc(var(--size-base) * 1.2);
-    --size-lg: calc(var(--size-base) * 1.5);
-    --size-xl: calc(var(--size-base) * 2);
-    --size-xxl: calc(var(--size-base) * 2.5);
-    --size-xxxl: calc(var(--size-base) * 5);
+    --size-xxxxs: max(calc(var(--size-base) * 0.2), 4px);
+    --size-xxxs: max(calc(var(--size-base) * 0.4), 8px);
+    --size-xxs: max(calc(var(--size-base) * 0.6), 12px);
+    --size-xs: max(calc(var(--size-base) * 0.8), 16px);
+    --size-sm: max(calc(var(--size-base) * 1), 20px);
+    --size-md: max(calc(var(--size-base) * 1.2), 24px);
+    --size-lg: max(calc(var(--size-base) * 1.5), 30px);
+    --size-xl: max(calc(var(--size-base) * 2), 40px);
+    --size-xxl: max(calc(var(--size-base) * 2.5), 50px);
+    --size-xxxl: max(calc(var(--size-base) * 5), 100px);
 
     --radius-lg: 24px;
     --radius-sm: 8px;
@@ -39,12 +37,8 @@ $xs: 320px;
     --lh-lg: 1.4;
     --lh-md: 1.2;
 
-
     --max-size: 1360px;
 
- 
     --border-h-lg: 4px;
     --border-h-md: 2px;
-
-
 }
