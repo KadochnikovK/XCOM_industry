@@ -96,10 +96,10 @@
     &__item-text {
         font-size: var(--size-sm);
         font-weight: 700;
-        line-height: 1.1;
+        line-height: 1.2;
 
         @include lg {
-            font-size: calc(var(--size-xs) * .8);
+            font-size: var(--size-xs);
         }
 
         &--big {

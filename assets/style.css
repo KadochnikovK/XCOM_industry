@@ -1362,11 +1362,11 @@ summary {
 .more__item-text {
   font-size: var(--size-sm);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 @media (min-width: 1224px) {
   .more__item-text {
-    font-size: calc(var(--size-xs) * 0.8);
+    font-size: var(--size-xs);
   }
 }
 .more__item-text--big {
